@@ -1,0 +1,86 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aitchison(1986)}]{aitchison1986}
+Aitchison, J.: The statistical analysis of compositional data, London, Chapman
+  and Hall, 1986.
+
+\bibitem[{Cohen(1992)}]{cohen1992}
+Cohen, J.: A power primer., Psychological bulletin, 112, 155, 1992.
+
+\bibitem[{Gehrels(2011)}]{gehrels2011}
+Gehrels, G.: {Detrital zircon U-Pb geochronology: Current methods and new
+  opportunities}, in: Tectonics of sedimentary basins: Recent advances, edited
+  by Busby, C. and Azor, A., chap.~2, pp. 45--62, Wiley Online Library, 2011.
+
+\bibitem[{Griffin et~al.(2008)Griffin, Powell, Pearson, and
+  O'Reilly}]{griffin2008}
+Griffin, W., Powell, W., Pearson, N., and O'Reilly, S.: {GLITTER: data
+  reduction software for laser ablation ICP-MS}, Laser Ablation-ICP-MS in the
+  earth sciences. Mineralogical Association of Canada short course series, 40,
+  204--207, 2008.
+
+\bibitem[{Jackson et~al.(2004)Jackson, Pearson, Griffin, and
+  Belousova}]{jackson2004}
+Jackson, S.~E., Pearson, N.~J., Griffin, W.~L., and Belousova, E.~A.: {The
+  application of laser ablation-inductively coupled plasma-mass spectrometry to
+  in situ U--Pb zircon geochronology}, Chemical Geology, 211, 47--69,
+  \doi{10.1016/j.chemgeo.2004.06.017}, 2004.
+
+\bibitem[{{Ludwig}(1998)}]{ludwig1998}
+{Ludwig}, K.~R.: {On the treatment of concordant uranium-lead ages}, Geochimica
+  et Cosmochimica Acta, 62, 665--676, \doi{10.1016/S0016-7037(98)00059-3},
+  1998.
+
+\bibitem[{{McIntyre} et~al.(1966){McIntyre}, {Brooks}, {Compston}, and
+  {Turek}}]{mcintyre1966}
+{McIntyre}, G.~A., {Brooks}, C., {Compston}, W., and {Turek}, A.: {The
+  Statistical Assessment of Rb-Sr Isochrons}, Journal of Geophysical Research,
+  71, 5459--5468, 1966.
+
+\bibitem[{{Nemchin} and {Cawood}(2005)}]{nemchin2005}
+{Nemchin}, A.~A. and {Cawood}, P.~A.: {Discordance of the U--Pb system in
+  detrital zircons: Implication for provenance studies of sedimentary rocks},
+  Sedimentary Geology, 182, 143--162, \doi{10.1016/j.sedgeo.2005.07.011}, 2005.
+
+\bibitem[{Pawlowsky-Glahn et~al.(2015)Pawlowsky-Glahn, Egozcue, and
+  Tolosana-Delgado}]{pawlowsky2015}
+Pawlowsky-Glahn, V., Egozcue, J.~J., and Tolosana-Delgado, R.: Modeling and
+  analysis of compositional data, John Wiley \& Sons, 2015.
+
+\bibitem[{Puetz et~al.(2018)Puetz, Ganade, Zimmermann, and
+  Borchardt}]{puetz2018}
+Puetz, S.~J., Ganade, C.~E., Zimmermann, U., and Borchardt, G.: {Statistical
+  analyses of global U-Pb database 2017}, Geoscience Frontiers, 9, 121--145,
+  2018.
+
+\bibitem[{Sl{\'{a}}ma et~al.(2008)Sl{\'{a}}ma, Ko{\v{s}}ler, Condon, Crowley,
+  Gerdes, Hanchar, Horstwood, Morris, Nasdala, Norberg, Schaltegger, Schoene,
+  Tubrett, and Whitehouse}]{slama2008}
+Sl{\'{a}}ma, J., Ko{\v{s}}ler, J., Condon, D.~J., Crowley, J.~L., Gerdes, A.,
+  Hanchar, J.~M., Horstwood, M. S.~A., Morris, G.~A., Nasdala, L., Norberg, N.,
+  Schaltegger, U., Schoene, B., Tubrett, M.~N., and Whitehouse, M.~J.:
+  Ple{\v{s}}ovice zircon -- A new natural reference material for {U}-{P}b and
+  {H}f isotopic microanalysis, Chemical Geology, 249, 1--35, 2008.
+
+\bibitem[{Spencer et~al.(2016)Spencer, Kirkland, and Taylor}]{spencer2016}
+Spencer, C.~J., Kirkland, C.~L., and Taylor, R.~J.: {Strategies towards
+  statistically robust interpretations of in situ U--Pb zircon geochronology},
+  Geoscience Frontiers, 7, 581--589, 2016.
+
+\bibitem[{Stacey and Kramers(1975)}]{stacey1975}
+Stacey, J. and Kramers, J.: Approximation of terrestrial lead isotope evolution
+  by a two-stage model, Earth and Planetary Science Letters, 26, 207--221,
+  1975.
+
+\bibitem[{Vermeesch(2018)}]{vermeesch2018c}
+Vermeesch, P.: {\texttt{IsoplotR}: a free and open toolbox for geochronology},
+  Geoscience Frontiers, 9, 1479--1493, 2018.
+
+\end{thebibliography}

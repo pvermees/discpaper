@@ -1,0 +1,1315 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for preprints and final revised papers.
+
+%% 2-column papers and preprints
+\documentclass[gchron, manuscript]{copernicus}
+
+\usepackage{upquote}
+
+%% Journal abbreviations (please use the same for preprints and final revised papers)
+
+% Advances in Geosciences (adgeo)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Annales Geophysicae (angeo)
+% Archives Animal Breeding (aab)
+% ASTRA Proceedings (ap)
+% Atmospheric Chemistry and Physics (acp)
+% Atmospheric Measurement Techniques (amt)
+% Biogeosciences (bg)
+% Climate of the Past (cp)
+% DEUQUA Special Publications (deuquasp)
+% Drinking Water Engineering and Science (dwes)
+% Earth Surface Dynamics (esurf)
+% Earth System Dynamics (esd)
+% Earth System Science Data (essd)
+% E&G Quaternary Science Journal (egqsj)
+% European Journal of Mineralogy (ejm)
+% Fossil Record (fr)
+% Geochronology (gchron)
+% Geographica Helvetica (gh)
+% Geoscience Communication (gc)
+% Geoscientific Instrumentation, Methods and Data Systems (gi)
+% Geoscientific Model Development (gmd)
+% History of Geo- and Space Sciences (hgss)
+% Hydrology and Earth System Sciences (hess)
+% Journal of Bone and Joint Infection (jbji)
+% Journal of Micropalaeontology (jm)
+% Journal of Sensors and Sensor Systems (jsss)
+% Magnetic Resonance (mr)
+% Mechanical Sciences (ms)
+% Natural Hazards and Earth System Sciences (nhess)
+% Nonlinear Processes in Geophysics (npg)
+% Ocean Science (os)
+% Primate Biology (pb)
+% Proceedings of the International Association of Hydrological Sciences (piahs)
+% Scientific Drilling (sd)
+% SOIL (soil)
+% Solid Earth (se)
+% The Cryosphere (tc)
+% Weather and Climate Dynamics (wcd)
+% Web Ecology (we)
+% Wind Energy Science (wes)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
+
+\begin{document}
+
+\title{On the treatment of discordant detrital zircon U--Pb data}
+
+
+% \Author[affil]{given_name}{surname}
+
+\Author[1]{Pieter}{Vermeesch}
+
+\affil[1]{Department of Earth Sciences, University College London, Gower Street, London WC1E 6BT}
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+%% If an author is deceased, please mark the respective author name(s) with a dagger, e.g. "\Author[2,$\dag$]{Anton}{Aman}", and add a further "\affil[$\dag$]{deceased, 1 July 2019}".
+
+%% If authors contributed equally, please mark the respective author names with an asterisk, e.g. "\Author[2,*]{Anton}{Aman}" and "\Author[3,*]{Bradley}{Bman}" and add a further affiliation: "\affil[*]{These authors contributed equally to this work.}".
+
+
+\correspondence{Pieter Vermeesch (p.vermeesch@ucl.ac.uk)}
+
+\runningtitle{Treatment of discordant U--Pb data}
+
+\runningauthor{Pieter Vermeesch}
+
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+
+\firstpage{1}
+
+\maketitle
+
+\begin{abstract}
+  Detrital zircon U--Pb geochronology is a staple of sedimentary
+  provenance analysis and crustal evolution studies. Constructing
+  detrital age spectra is straightforward for concordant
+  \textsuperscript{206}Pb/\textsuperscript{238}U- and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb-compositions.  But
+  unfortunately, many detrital U--Pb datasets contain a significant
+  proportion of discordant analyses. This situation is expected to
+  worsen in the future as a result of increasing analytical precision,
+  which reveals ever smaller deviations from isotopic concordance.
+  The analysis of discordant U--Pb data involves two largely arbitrary
+  decisions.
+
+  First, the analyst must choose whether to use the
+  \textsuperscript{206}Pb/\textsuperscript{238}U- or the
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb-date. The
+  \textsuperscript{206}Pb/\textsuperscript{238}U-method is more
+  precise for young samples, whereas the
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb-method is better
+  suited for old samples. However there is no agreement which `cutoff'
+  should be used to switch between the two. This subjective decision
+  can be avoided by using single grain concordia ages. These represent
+  a kind of weighted mean between the
+  \textsuperscript{206}Pb/\textsuperscript{238}U- and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb-methods, which
+  offers better precision than either of the latter two methods.
+
+  A second subjective decision is how to define the discordance cutoff
+  between `good' and `bad' data. Discordance is usually defined as (1)
+  the relative age difference between the
+  \textsuperscript{206}Pb/\textsuperscript{238}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb dates.  However,
+  this paper shows that several other definitions are possible as
+  well, including (2) the absolute age difference; (3) the common-Pb
+  fraction according to the Stacey-Kramers mantle evolution model; (4)
+  the p-value of concordance; (5) the perpendicular logratio (or
+  `Aitchison') distance to the concordia line; and (6) the logratio
+  distance to the maximum likelihood composition on the concordia
+  line.
+
+  Applying these six discordance filters to a 10,000-grain dataset of
+  detrital zircon U--Pb compositions reveals that: (i) the relative
+  age discordance filter tends to suppress the young ($<1.5$~Ga) age
+  components in U--Pb age spectra, whilst inflating the older
+  ($>1.5$~Ga) age components; (ii) the absolute age difference and
+  Stacey-Kramers discordance filters are more likely to reject old
+  grains and less likely to reject young ones; (iii) the p-value based
+  discordance filter has the undesirable effect of biasing the results
+  towards the least precise measurements; (iv) the logratio-based
+  discordance filters are most strict for Proterozoic grains, and more
+  lenient for Phanerozoic and Archaean age components; (v) of all the
+  methods, the logratio distance to the concordia composition produces
+  the best results, in the sense that it yields nearly identical
+  \textsuperscript{206}Pb/\textsuperscript{238}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb age spectra.  All
+  the methods presented in this paper have been implemented in the
+  \texttt{IsoplotR} toolbox for geochronology.
+\end{abstract}
+
+%\copyrightstatement{TEXT} %% This section is optional and can be used for copyright transfers.
+
+
+\introduction  %% \introduction[modified heading if necessary]
+\label{sec:intro}
+
+Detrital zircon U--Pb geochronology is a widely used tool for
+sedimentary provenance analysis, crustal evolution studies and maximum
+depositional age estimation.  In all these applications, inferences
+are based on the frequency distribution of U--Pb age \emph{estimates},
+which are derived from isotopic ratio \emph{measurements}. Several
+mathematical and statistical operations are required to extract an age
+spectrum from a table of U--Pb isotope ratio measurements. There
+exists a lack of consensus among the detrital zircon geochronology
+community about some of these steps.  Two outstanding questions are:
+
+\begin{enumerate}
+\item Which age estimate to use? It is widely recognised that
+  \textsuperscript{206}Pb/\textsuperscript{238}U age estimates offer
+  the optimal accuracy and precision at the young end of the age
+  spectrum, whereas the
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb method is better
+  suited for older samples. However the cutoff between the two clocks
+  varies between studies, with values ranging from 800~Ma to 1.5~Ga
+  \citep{gehrels2011,spencer2016}.
+\item How to treat discordant data? The most reliable age constraints
+  are obtained from zircons whose
+  \textsuperscript{206}Pb/\textsuperscript{238}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb ages are
+  statistically indistinguishable from each other. U--Pb compositions
+  that fulfil this requirements are `concordant'. Those that violate
+  it are `discordant'. It is not obvious how to quantify the
+  discordance of the \textsuperscript{206}Pb/\textsuperscript{238}U
+  and \textsuperscript{207}Pb/\textsuperscript{206}Pb systems. Most
+  studies define discordance as the relative age difference between
+  the \textsuperscript{206}Pb/\textsuperscript{238}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb ages, but some
+  advocate the use of statistical hypothesis tests and p-values to
+  quantify discordance \citep{spencer2016}. And even when a
+  discordance definition has been agreed upon, there are many ways to
+  choose the discordance cutoff. For example, the relative age
+  discordance threshold may vary between 10\% and 30\%
+  \citep{gehrels2011}.
+\end{enumerate}
+
+This paper addresses both of these issues. Section~\ref{sec:whichage}
+shows that single-grain concordia ages \citep{ludwig1998} can be used
+to avoid the arbitrary cutoff between the
+\textsuperscript{206}Pb/\textsuperscript{238}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb
+methods. Section~\ref{sec:discordance1} compares and contrasts
+existing discordance filters based on age disparity and p-values. It
+shows that the p-value definition hurts both the accuracy and
+precision of detrital geochronology. Section~\ref{sec:discordance2}
+proposes three new ways to quantify discordance, based directly on
+U--Pb compositions rather than the ages calculated therefrom. Two of
+these new definitions are based on a logratio distance that is widely
+used in compositional data analysis \citep{aitchison1986}. Finally,
+Section~\ref{sec:application} applies the six discordance filters to a
+compilation of detrital zircon U--Pb data. Although the true age
+distribution of this dataset is unknowable, the results suggest that
+the logratio based discordance filters produce the most accurate
+results.
+
+\section{Which age to choose?}\label{sec:whichage}
+
+\begin{figure}[t]
+  \includegraphics[width=8.3cm]{TW1500.pdf}
+  \caption{Illustrative Tera-Wasserburg concordia diagram with a
+      concordant and discordant measurement. $t_{68}$ marks the
+      \textsuperscript{206}Pb/\textsuperscript{238}U age, $t_{76}$ the
+      \textsuperscript{207}Pb/\textsuperscript{206}Pb age, and $t_{c}$
+      the concordia age. Measurement~1 is concordant because its
+      estimates for $t_{68}$, $t_{76}$ and $t_{c}$ are
+      identical. Measurement~2 is discordant because the three
+      estimates disagree. The concordia age is the most likely age
+      given the analytical uncertainties. It falls between the other
+      two age estimates, and offers the best analytical precision of
+      the three.
+  }
+  \label{fig:concordia}
+\end{figure}
+
+The U--Pb method is based on three separate chronometers:
+\textsuperscript{206}Pb/\textsuperscript{238}U,
+\textsuperscript{207}Pb/\textsuperscript{235}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb. The half-life of
+\textsuperscript{235}U is more than six times shorter than that of
+\textsuperscript{238}U, and \textsuperscript{235}U is more than 100
+times less abundant than \textsuperscript{238}U. For these two
+reasons, little \textsuperscript{207}Pb has been produced during the
+last billion years of Earth history compared to
+\textsuperscript{206}Pb. Consequently, the
+\textsuperscript{207}Pb/\textsuperscript{235}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb methods are less
+precise than the \textsuperscript{206}Pb/\textsuperscript{238}U method
+during the Phanerozoic and Neoproterozoic.
+
+However, during earlier stages of Earth's history,
+\textsuperscript{235}U was significantly more abundant than it is
+today. The \textsuperscript{238}U/\textsuperscript{235}U ratio was
+$\sim$60 at 1Ga, $\sim$26 at 2Ga, $\sim$11 at 3Ga, and $\sim$5 at 4Ga.
+Due to the greater abundance of \textsuperscript{235}U in this past,
+and because it decays much faster than \textsuperscript{238}U, the
+precision of the \textsuperscript{207}Pb/\textsuperscript{235}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb clocks exceeds that of
+the \textsuperscript{206}Pb/\textsuperscript{238}U method during the
+Palaeoproterozoic and Archaean. The gradual shift in sensitivity
+between the two chronometers is visible in the slope of a
+Tera-Wasserburg concordia line, which is steep at old ages (high
+\textsuperscript{207}Pb/\textsuperscript{206}Pb gradient w.r.t. time)
+and shallow at young ages (low
+\textsuperscript{238}U/\textsuperscript{206}Pb gradient
+w.r.t. time).
+
+Most published detrital zircon U--Pb studies switch from
+\textsuperscript{206}Pb/\textsuperscript{238}U to
+\textsuperscript{207}Pb/\textsuperscript{206}Pb at some point during
+the Proterozoic. Unfortunately there are two problems with such a
+switch. First, it requires the selection of a discrete discordance
+cutoff between the two methods. If this cutoff differs between two
+studies (which it often does), then this complicates the
+intercomparison of their respective age spectra. Second, the sudden
+switch between the \textsuperscript{206}Pb/\textsuperscript{238}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb clocks is often marked
+by a discrete step in the age spectrum \citep{puetz2018}. This step is
+entirely artificial and obscures any geologically significant events
+that might occur around the same time.
+
+Both of these problems can be solved by using `hybrid' concordia ages
+instead of `pure' \textsuperscript{206}Pb/\textsuperscript{238}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb ages. Concordia ages
+are defined by \citet{ludwig1998} as the `most likely' (in a
+statistical sense) U--Pb age given the isotopic ratio composition and
+its analytical uncertainty (Figure~\ref{fig:concordia}).  Let $r_{75}$
+and $r_{68}$ be the measured
+\textsuperscript{207}Pb/\textsuperscript{235}U and
+\textsuperscript{206}Pb/\textsuperscript{238}U ratios, respectively,
+and let $\sigma[r_{68}]^2$, $\sigma[r_{76}]^2$,
+$\sigma[r_{68},r_{76}]$ be their (co)variances.  Then the concordia
+age $t_c$ is obtained by numerically minimising the sum of squares
+$S$:
+\begin{equation}
+  S = \left[
+    \begin{array}{@{}c@{}}
+      r_{75} - \exp(\lambda_{235}t_c) + 1 \\
+      r_{68} - \exp(\lambda_{238}t_c) + 1
+    \end{array}
+    \right]^T\left[
+    \begin{array}{@{}cc@{}}
+      \sigma[r_{75}]^2 & \sigma[r_{75},r_{68}] \\
+      \sigma[r_{75},r_{68}] & \sigma[r_{68}]^2
+    \end{array}
+    \right]^{-1}
+  \left[
+    \begin{array}{@{}c@{}}
+      r_{75} - \exp(\lambda_{235}t_c) + 1 \\
+      r_{68} - \exp(\lambda_{238}t_c) + 1      
+    \end{array}
+    \right]
+  \label{eq:S}
+\end{equation}
+
+The single grain concordia age combines the chronometric power of the
+\textsuperscript{206}Pb/\textsuperscript{238}U and
+\textsuperscript{207}Pb/\textsuperscript{206}Pb systems. For young
+($<$1~Ga) samples, the concordia age is nearly identical to the
+\textsuperscript{206}Pb/\textsuperscript{238}U age. For old samples
+($>$2~Ga) it approaches the
+\textsuperscript{207}Pb/\textsuperscript{206}Pb age. For Proterozoic
+samples, the concordia age gradually shifts form the
+\textsuperscript{206}Pb/\textsuperscript{238}U to the
+\textsuperscript{207}Pb/\textsuperscript{206}Pb age. Using concordia
+ages removes the need for an arbitrary cutoff between the two
+chronometers. An additional advantage is that the concordia age offers
+better precision than the
+\textsuperscript{206}Pb/\textsuperscript{238}U and the
+\textsuperscript{207}Pb/\textsuperscript{206}Pb chronometer (or the
+\textsuperscript{207}Pb/\textsuperscript{235}U for that matter)
+(Figure~\ref{fig:precision}).
+
+\begin{figure}[t]
+  \includegraphics[width=8.3cm]{agerr.pdf}
+  \caption{Predicted uncertainties of the
+    \textsuperscript{207}Pb/\textsuperscript{235}U,
+    \textsuperscript{206}Pb/\textsuperscript{238}U,
+    \textsuperscript{207}Pb/\textsuperscript{206}Pb and concordia
+    ages for a synthetic dataset with a constant uranium
+    concentration. Dwell times and detector sensitivities were
+    chosen so as to yield results that are similar to those obtained
+    from real data. The concordia age (solid line) always offers the
+    best precision. See the Appendix for further details about the
+    calculations behind this figure.}
+  \label{fig:precision}
+\end{figure}
+
+\section{Discordance filters: old definitions}\label{sec:discordance1}
+
+Discordance may be caused by the addition of common Pb, the partial
+removal of Pb during high grade metamorphism, or the mixing of
+diachronous growth zones during micro-analysis. Most commonly,
+discordance is defined in terms of the relative difference between the
+\textsuperscript{206}Pb/\textsuperscript{238}U age and the
+\textsuperscript{207}Pb/\textsuperscript{206}Pb age
+\citep{gehrels2011}:
+\begin{equation}
+  d_r = 1 - t_{68}/t_{76}
+  \label{eq:dr}
+\end{equation}
+
+However other definitions are possible as well. For example, one could
+also define discordance in terms of absolute age differences
+\citep{puetz2018}:
+\begin{equation}
+  d_t = t_{76} - t_{68}
+  \label{eq:dt}
+\end{equation}
+
+A third option is to define discordance in terms of U--Pb compositions
+rather than ages. \citet{spencer2016} advocate using p-values to
+assess concordance. In the context of single grain concordia ages, the
+p-value is the probability that the sum of squares $S$
+(Equation~\ref{eq:S}) exceeds the observed value under a chi-square
+distribution with two degrees of freedom:
+\begin{equation}
+  d_p = \mbox{Prob}\left(s > S | S \sim \chi^2_2
+    \right)
+  \label{eq:dp}
+\end{equation}
+
+Detrital zircon U--Pb data can be filtered by removing all
+measurements whose discordance values exceed a certain threshold
+value. Typical cutoff values for $d_r$ are 10--30\%
+\citep{gehrels2011}, whereas $d_p$ is generally set to 5\%
+\citep{spencer2016}. Different discordance criteria produce different
+U--Pb age spectra. For example, a relative age cutoff will
+preferentially remove young grains whereas an absolute age cutoff is
+more likely to remove old grains (Figure~\ref{fig:agediscordance}).
+
+\begin{figure}[t]
+  \includegraphics[width=8.3cm]{TW-option-12.pdf}
+  \caption{Discordance filters using a 200~Ma absolute age cutoff
+    (dashed lines) and a 20\% relative age cutoff (dotted
+    lines). The Tera-Wasserburg concordia diagram is plotted in
+    logarithmic space to provide a more balanced view of the old and
+    young ends of the time scale.
+  }
+  \label{fig:agediscordance}
+\end{figure}
+
+The p-value definition affects grains differently depending on their
+analytical precision \citep{nemchin2005}. For example, consider a
+1.5~Ga zircon that is 1\% discordant. If this grain were analysed by
+LA-ICP-MS with an analytical precision of 2\%, say, then it would pass
+the chi-square test and be accepted as being concordant. However, if
+that same grain were analysed by TIMS with a precision of 0.2\%, then
+the p-value criterion would reject it as being discordant. It seems
+fundamentally unfair that an imprecise analytical method would be
+favoured over a precise one (Figure~\ref{fig:TIMSvsLAICPMS}). This is
+a pertinent problem because technical innovations are increasing the
+precision of all analytical approaches to U--Pb geochronology.  As
+precision improves, so does the ability to detect even small degrees
+of discordance. Using the p-value criterion, there may come a time
+when no detrital zircon passes this filter.
+
+A final argument against the p-value discordance criterion is that it
+biases against old U--Pb ages. This is because old zircon contains
+more radiogenic Pb than young zircon does. Therefore the analytical
+precision of the isotopic ratio measurements tends to be better for
+old grains than it is for young ones. Consequently, the chi-square
+test has greater power \citep[\emph{sensu}][]{cohen1992} to reject
+them. In conclusion, p-value based discordance filters are
+fundamentally flawed. Despite their appeal as `objective' tools for
+statistical decision making, formalised hypothesis tests such as
+chi-square are rarely useful in geology. For the same reason, the
+widely used MSWD \citep[Mean Square of the Weighted
+  Deviates,][]{mcintyre1966} statistic (which is just $S$/2 in this
+case) should be used with caution. This is because, like p-values,
+also MSWD cutoffs punish precise datasets in favour of imprecise
+ones. Note that this caveat also goes against the recommendations of
+\citet{spencer2016}.
+
+\begin{figure}
+  \includegraphics[width=8.3cm]{TIMSvsICPMS.pdf}
+  \caption{Application of the flawed p-value discordance criterion
+    to two synthetic measurements by TIMS (left) and LA-ICP-MS
+    (right).  The precise TIMS measurement is labelled as discordant
+    even though it plots closer to the concordia line than the
+    imprecise LA-ICP-MS measurement, which is labelled as
+    concordant.
+  }
+  \label{fig:TIMSvsLAICPMS}
+\end{figure}
+
+\section{Discordance filters: new definitions}\label{sec:discordance2}
+
+\begin{figure}
+  \includegraphics[width=8.3cm]{TW-option-linear-3.pdf}
+    \caption{Using the \citet{stacey1975} common Pb model as a
+      discordance criterion. This criterion assumes that the
+      discordance is caused by linear mixing (hence, the linear scale
+      of this Tera-Wasserburg plot) between radiogenic Pb
+      (intersections of the mixing lines with concordia) and common Pb
+      (intersection of the mixing lines with the vertical axis). The
+      dashed line marks the 20\% ($= d_1/[d_1+d_2]$) discordance
+      cutoff. This discordance filter, which must be applied
+      \emph{before} making any actual common Pb correction, is more
+      forgiving for young grains than it is for old grains. In this
+      respect, it has the opposite effect of the relative age filter
+      shown in Figure~\ref{fig:agediscordance}.
+    }
+    \label{fig:SK}
+\end{figure}
+
+Section~\ref{sec:discordance1} reviewed three existing discordance
+definitions.  This Section will introduce three new ones.  None of the
+definitions discussed thus far encode any information about the
+geological mechanisms behind the discordance. As explained in
+Section~\ref{sec:intro}, common Pb is one of the most likely causes of
+discordance. Using a mantle evolution model \citep[e.g.][]{stacey1975}
+to approximate the isotopic composition of this common Pb, discordance
+can be defined as:
+\begin{equation}
+  d_{sk} = 1 - \left[\frac{{}^{238}U}{{}^{206}Pb}\right]\bigg/\left[\frac{{}^{238}U}{{}^{206}Pb}\right]^\ast
+  \label{eq:dsk}
+\end{equation}
+
+\noindent where $[{}^{238}U/{}^{206}Pb]^\ast$ is the
+\textsuperscript{238}U/\textsuperscript{206}Pb-ratio of the
+intersection between concordia and a straight line connecting the
+\textsuperscript{238}U/\textsuperscript{206}Pb--\textsuperscript{207}Pb/\textsuperscript{206}Pb
+measurement to the inferred mantle composition (Figure~\ref{fig:SK}).
+
+The common Pb definition of discordance is more forgiving for young
+grains than it is for old ones. Importantly, if the discordance is
+caused by common Pb, then the
+\textsuperscript{206}Pb/\textsuperscript{238}U,
+\textsuperscript{207}Pb/\textsuperscript{206}Pb and concordia age
+estimates are all negatively biased with respect to the true
+age. However this bias can be removed by applying a common-Pb
+correction \emph{after} the data have been filtered.
+
+Each discordia definition that we have studied thus far is expressed
+in different units. For the absolute age definition, degrees of
+discordance are expressed in units of time (ranging from 0 to
+4.5~Ga). The relative age definition uses fractions of time (ranging
+from $-\infty$ to 1). The p-value definition expresses discordance in
+terms of probability (ranging from 0 to 1). And the \citet{stacey1975}
+definition uses fractions of ratios (ranging from $-\infty$ to
+1). None of these scales is particularly intuitive or natural. They
+certainly do not match the usual definition of \emph{distance} in the
+geographical sense of the word.
+
+To address this issue, it is useful to subject the U--Pb isotopic
+ratio data to a logarithmic transformation. So instead of analysing
+our data on a conventional Tera-Wasserburg concordia diagram, all
+calculations can be done in
+log(\textsuperscript{207}Pb/\textsuperscript{206}Pb) vs.
+log(\textsuperscript{238}U/\textsuperscript{206}Pb) space. The
+advantage of this transformation is that it produces values that are
+free to range from $-\infty$ to $+\infty$. Within this infinite
+dataspace, the Euclidean distance metric can be safely applied.
+
+\begin{figure}
+  \includegraphics[width=8.3cm]{Aitchison.pdf}
+  \caption{Illustration of the two logratio distance definitions of
+    discordance. $d_a$ is the perpendicular Aitchison distance from
+    the measured logratio to the concordia line. $d_c$ is the
+    Aitchison distance measured along a line connecting the measured
+    value and the concordia composition.
+  }
+  \label{fig:aitchison}
+\end{figure}
+
+There exists a vast body of statistical literature detailing the
+theoretical and practical advantages of logratio analysis. A deeper
+discussion of this topic falls outside the scope of this paper, but
+the interested reader is referred to \citet{aitchison1986} and
+\citet{pawlowsky2015} for further information. The Euclidean distance
+between logratios is also known as the `Aitchison distance'.  We can
+redefine discordance as the Aitchison distance from the measured
+logratios to the concordia line. We here introduce two ways to do so.
+A first option is to simply measure the distance along a perpendicular
+line to the concordia curve (Figure~\ref{fig:aitchison}):
+\begin{equation}
+  d_{a} = dx(t_{68})
+  \sin\!\left(\arctan\!\left[ \frac{dy(t_{76})}{dx(t_{68})} \right]
+  \right)
+  \label{eq:dperp}
+\end{equation}
+
+\noindent where
+\begin{equation}
+\begin{split}
+  dx(t)  = & \log\!\left[\frac{{}^{206}Pb}{{}^{238}U}\right]-
+  \log\!\left[\exp(\lambda_{238} t)-1\right] \\
+  \mbox{~and~}
+  dy(t) = & \log\!\left[\frac{{}^{207}Pb}{{}^{206}Pb}\right] -
+      \log\!\left[\frac{{}^{235}U}{{}^{238}U}
+        \frac{\exp(\lambda_{235}t)-1}{\exp(\lambda_{238}t)-1}
+        \right]
+  \end{split}
+\end{equation}
+
+This definition produces a parallel band around the concordia line in
+logarithmic Tera-Wasserburg space. In contrast with $d_r$, $d_t$,
+$d_{sk}$, the $d_a$ criterion is less strict at both the young and old
+extremes of the geological timescale, and more strict during the
+Proterozoic Era, when the U--Pb method is most reliable
+(Figure~\ref{fig:dperp}).
+
+The perpendicular Aitchison distance criterion does not take into
+account the analytical precision of the isotopic measurements.  To
+address this issue, we can also measure the Aitchison distance along a
+line connecting the measured logratio and the maximum likelihood
+composition on the concordia line:
+\begin{equation}
+  d_c = \mbox{sgn}[t_{76}-t_{68}] \sqrt{ dx(t_c)^2 + dy(t_c)^2 }
+  \label{eq:da}
+\end{equation}
+
+\noindent where sgn[$\ast$] stands for the ``sign of $\ast$'', which
+produces positive values for measurements that plot above the
+concordia line, and negative values for measurements that plot below
+it.
+
+\begin{figure}
+  \includegraphics[width=8.3cm]{TW-option-4.pdf}
+  \caption{The $d_a$ criterion produces a parallel band to the
+    (logarithmic) Tera-Wasserburg concordia line. The dashed line is
+    plotted at an Aitchison distance of 0.1 from concordia, marking
+    a 10\% discordance cutoff. The bottom panel presents the age
+    discordance along this line. This shows that the $d_a$ criterion
+    is lenient for Phanerozoic and Archaean age estimates, and more
+    strict for Proterozoic grains.
+  }
+  \label{fig:dperp}
+\end{figure}
+
+\section{Application to a compilation of detrital zircon U--Pb data}
+\label{sec:application}
+
+It is difficult to ascertain the mechanism causing discordance in any
+particular zircon grain. Therefore, it is unclear which of the
+definitions in Sections~\ref{sec:discordance1} and
+\ref{sec:discordance2} is `correct'. All we can is do is apply the
+methods to real samples and investigate their outcomes. This Section
+will apply the six discordance filters to a compilation of 10,000
+detrital zircon U--Pb analyses that were acquired at the London
+Geochronology Centre (LGC) at University College London.
+
+The data come from field areas on all seven continents. They were
+acquired by LA-ICP-MS, on either an Agilent 7700x (old samples) or an
+Agilent 7900 (recent samples) instrument, which was coupled to a New
+Wave NWR193 excimer laser. Analytical conditions varied slightly
+between different samples but generally used a 25 or 35 micron laser
+spot, Ple\v{s}ovice zircon as a primary standard \citep{slama2008}
+and, in most cases, GJ-1 zircon as a secondary standard
+\citep{jackson2004}. Data reduction was done with GLITTER
+\citep{griffin2008}. The data were not subjected to any common Pb
+correction or other filters, apart from a visual inspection to remove
+the most extreme outliers ($<1\%$ of the data).
+
+Figure~\ref{fig:KDE} shows the frequency distribution of the complete,
+unfiltered dataset as a kernel density estimate. The
+\textsuperscript{207}Pb/\textsuperscript{235}U,
+\textsuperscript{206}Pb/\textsuperscript{238}U and concordia age
+spectra all look similar. However, the
+\textsuperscript{207}Pb/\textsuperscript{206}Pb age distribution
+deviates from the other three chronometers. It reduces the prominence
+of the young age components, and inflates the old end of the age
+spectrum.
+
+\begin{figure}
+  \includegraphics[width=8.3cm]{KDE.pdf}
+  \caption{Four superimposed kernel density estimates (with 60~Ma
+    bandwidth) for 10,000 unfiltered detrital zircon U--Pb
+    dates. The \textsuperscript{207}Pb/\textsuperscript{235}U,
+    \textsuperscript{206}Pb/\textsuperscript{238}U and concordia age
+    spectra are similar.  However the KDE of the
+    \textsuperscript{207}Pb/\textsuperscript{206}Pb data stands
+    apart from the other three curves. It deviates both at the young
+    end of the age spectrum (which it suppresses), and at the old
+    end (which it inflates).
+  }
+  \label{fig:KDE}
+\end{figure}
+
+Figure~\ref{fig:KDEs} applies the six discordance filters to this
+database. In order to emphasise the difference between the six
+discordance definitions whilst treating them on an equal footing, each
+of the filters was adjusted until half of the data were removed. This
+was achieved by discordance cutoffs of $d_t$ = 51~Myr, $d_r = 0.0618$,
+$d_{p} = 0.084$, $d_{sk} = 0.00225$, $d_a = 0.0219$ and $d_c =
+0.0297$.
+
+There are noticeable differences between the density estimates.  As
+expected from the theoretical considerations laid out in
+Sections~\ref{sec:discordance1} and \ref{sec:discordance2}, the
+relative age filter greatly suppresses the younger age components
+($<1.5$~Ga) relative to the older parts of the age spectrum
+($>1.5$~Ga). The \citet{stacey1975} filter has the opposite effect.
+It suppresses the Archaean age component by $\sim$20\% whilst further
+increasing the prominence of the Neoproterozoic and Phanerozoic modes.
+
+The discordance definitions based on the absolute age difference and
+logratio distances have a comparatively minor effect on the shape of
+the age spectrum. All six discordance filters reduce the difference
+between the \textsuperscript{207}Pb/\textsuperscript{206}Pb and
+concordia age spectra except for the p-value filter, which actually
+exacerbates the problem.
+
+If the degree of similarity between the four chronometers is taken as
+a measure of their success, then the concordia distance filter ($d_c$)
+is the most successful discordance criterion. Apart from a minor
+difference at the youngest end of the age spectrum, the four different
+chronometers yield virtually identical age distributions after passing
+through this filter.
+
+\begin{figure*}[t]
+  \includegraphics[width=12cm]{KDEs.pdf}
+  \caption{Filtered U--Pb age spectra for the test data, removing the
+    50\% most discordant grains according to the six discordance
+    filters reviewed in this paper. Notice how the concordia distance
+    filter ($d_c$, fifth panel) exhibits the smallest difference
+    between the four dating methods (including
+    \textsuperscript{207}Pb/\textsuperscript{206}Pb), wherease the
+    p-value filter ($d_p$, sixth panel) generates the greatest
+    differences between them.  This observation suggests that the
+    $d_c$ criterion is the best and the $d_p$ criterion the worst of
+    the six methods.
+  }
+  \label{fig:KDEs}
+\end{figure*}
+
+Figure~\ref{fig:KDEs} removed 50\% of the data, in order to emphasise
+the differences between the six filters. In real applications, less
+stringents discordance filters are usually applied. As mentioned in
+the introduction, most current detrital zircon studies apply a
+10\%--30\% relative age cutoff.  Using the test data, we can evaluate
+the equivalent values for the $d_t$, $d_t$, $d_{sk}$, $d_a$ and $d_c$
+criteria (Table~\ref{tab:conversiontable}). For example, a relative
+age filter of 10\% removes the same fraction of the test data as an
+absolute age filter with $d_t=83.5$~Ma, a Stacey-Kramers filter with
+$d_{sk}=0.381$\%, a perpendicular Aitchison filter with $d_a=3.61$\%,
+and a concordia distance filter with $d_c=3.67$\%.
+
+The p-value discordance filter has been omitted from this comparison
+for two reasons. First, the use of this filter is discouraged for
+reasons that have been discussed before. Second, the p-value cutoffs
+that are equivalent to any given relative age difference are highly
+lab-dependent, with precise equipment requiring different
+$d_p$-cutoffs than imprecise instruments. The other five discordance
+filters are more universally applicable. So using a different set of
+test data should only make a relatively minor difference to the values
+in Table~\ref{tab:conversiontable}.
+
+\begin{table}
+  \begin{tabular}{c|cccc}
+    $d_r$ & $d_t$ & $d_{sk}$ & $d_a$ & $d_c$ \\ \hline
+    -10 & -60.4 & -0.287 & -2.59 & -2.62 \\
+    -5 & -38.8 & -0.175 & -1.67 & -1.69 \\
+    -4 & -32.3 & -0.143 & -1.39 & -1.41 \\
+    -3 & -25 & -0.108 & -1.08 & -1.09 \\
+    -2 & -17.3 & -0.0681 & -0.747 & -0.758 \\
+    -1 & -8.33 & -0.0328 & -0.356 & -0.361 \\
+    0 & 0 & 0 & 0 & 0 \\
+    1 & 9.31 & 0.0367 & 0.395 & 0.406 \\
+    2 & 18.5 & 0.0773 & 0.795 & 0.816 \\
+    3 & 28.1 & 0.117 & 1.2 & 1.23 \\
+    4 & 36.7 & 0.151 & 1.58 & 1.6 \\
+    5 & 43.9 & 0.189 & 1.9 & 1.94 \\
+    10 & 83.5 & 0.381 & 3.61 & 3.67 \\
+    15 & 117 & 0.538 & 5.02 & 5.16 \\
+    20 & 151 & 0.736 & 6.54 & 6.7 \\
+    25 & 187 & 0.949 & 8.01 & 8.24 \\
+    30 & 230 & 1.18 & 9.93 & 10.2 \\
+    40 & 328 & 1.74 & 14.2 & 14.8 \\
+    50 & 463 & 2.47 & 20.3 & 21.6
+  \end{tabular}
+  \caption{Conversion table for the different discordance filters,
+    constructed using the test data. All discordance values are
+    expressed as \%, except for $d_t$, which is expressed in Ma. This
+    table allows the reader to select a discordance cutoff that
+    removes the same fraction of their data as the relative age cutoff
+    ($d_r$) that they may have applied in the past. }
+  \label{tab:conversiontable}
+\end{table}
+
+\section{Implementation in \texttt{IsoplotR}}
+\label{sec:IsoplotR}
+
+All the discordance filters presented in this paper (both old and new)
+have been implemented in \texttt{IsoplotR} \citep{vermeesch2018c}, a
+geochronological toolbox written in the \texttt{R}
+language. \texttt{IsoplotR} can be accessed either from the command
+line, or via a graphical user interface (GUI), either offline or
+online (\texttt{http://isoplotr.london-geochron.com}).  The
+discordance filters are accessible via both methods. In the GUI, the
+discordance can be tabulated via the \texttt{age} function, and has
+also been incorporated in \texttt{IsoplotR}'s other functions,
+including its concordia and weighted mean calculation algorithms.
+Further details about these options are provided under the
+\texttt{options} menu. To access the same functionality from the
+command line, we must first install \texttt{IsoplotR} from the
+Comprehensive R Archive Network (CRAN):
+
+\begin{verbatim}
+install.packages('IsoplotR')
+\end{verbatim}
+
+\noindent Once installed, we need to add the package to our working
+environment:
+
+\begin{verbatim}
+library(IsoplotR)
+\end{verbatim}
+
+\noindent Loading the test data into memory:
+
+\begin{verbatim}
+UPb <- read.data('data.csv',method='U-Pb',format=2)
+\end{verbatim}
+
+\noindent Now we can calculate the discordance using
+\texttt{IsoplotR}'s \texttt{discfilter} function. For example, to
+compute the relative age discordance ($d_r$):
+
+\begin{verbatim}
+tr <- age(UPb,discordance=discfilter(option='r'))
+\end{verbatim}
+
+\noindent which produces a ${10000}\times{9}$ table whose first eight
+columns list the \textsuperscript{207}Pb/\textsuperscript{235}U,
+\textsuperscript{206}Pb/\textsuperscript{238}U,
+\textsuperscript{207}Pb/\textsuperscript{206}Pb and concordia ages and
+their uncertainties, and whose ninth column lists the relative age
+discordance as percentages. Similarly, to compute the concordia
+distance ($d_c$):
+
+\begin{verbatim}
+tc <- age(UPb,discordance=discfilter(option='c'))
+\end{verbatim}
+
+\noindent Plotting a KDE of the single grain concordia ages that pass
+the perpendicular Aitchison filter with ${-1.67}\leq{d_a}\leq{5.02}$:
+
+\begin{verbatim}
+df <- discfilter(option='c',cutoff=c(-1.69,5.16))
+kde(UPb,type=5,cutoff.disc=df)
+\end{verbatim}
+
+\noindent Apply a Stacey-Kramers common Pb-correction to the data after
+applying a Stacey-Kramers discordance filter with
+${0.285}\leq{d_{sk}}\leq{1.16}$:
+
+\begin{verbatim}
+df <- discfilter(option='sk',cutoff=c(-0.285,1.16))
+kde(UPb,common.Pb=3,cutoff.disc=df)
+\end{verbatim}
+
+\noindent If the dataset includes \textsuperscript{204}Pb (which is
+not the case for the test data), then we can also apply a discordance
+filter \textit{after} the common Pb correction. For example:
+
+\begin{verbatim}
+df <- discfilter(option='r',before=FALSE,cutoff=c(-5,15))
+kde(UPb,common.Pb=3,type=4,cutoff.76=1200,cutoff.disc=df)
+\end{verbatim}
+
+\noindent where \verb|option='r'| triggers the relative age filter
+($d_r$), \texttt{common.Pb=3} applies a Stacey-Kramers type common Pb
+correction, \texttt{type=4} uses the
+\textsuperscript{206}Pb/\textsuperscript{238}U-age for young grains
+and the \textsuperscript{207}Pb/\textsuperscript{206}Pb-age for old
+ones, and \texttt{cutoff.76} marks the age (in Ma) at which to switch
+from the \textsuperscript{206}Pb/\textsuperscript{238}U to the
+\textsuperscript{207}Pb/\textsuperscript{206}Pb method. Further
+information about these functions can be obtained from the built-in
+documentation:
+
+\begin{verbatim}
+?IsoplotR
+?discfilter
+?kde
+\end{verbatim}
+
+\noindent Note that the examples shown here may take a few minutes to
+complete due to the large size of the test dataset.
+
+\conclusions
+\label{sec:conclusions}
+
+This paper compared four U--Pb clocks and six discordance filters.
+
+\begin{enumerate}
+  \item The \textsuperscript{206}Pb/\textsuperscript{238}U clock is
+    most precise at the young end of the geologic timescale.
+  \item The \textsuperscript{207}Pb/\textsuperscript{206}Pb method is
+    more precise than the
+    \textsuperscript{206}Pb/\textsuperscript{238}U method before the
+    Neoproterozoic.
+  \item The \textsuperscript{207}Pb/\textsuperscript{235}U clock
+    offers no advantage over the other two methods.
+  \item The single grain concordia age is applicable to the entire
+    span of geologic time and always offers the best precision. It
+    approaches the \textsuperscript{206}Pb/\textsuperscript{238}U age
+    as time approaches zero, and the
+    \textsuperscript{207}Pb/\textsuperscript{206}Pb age as time
+    approaches infinity.
+\end{enumerate}
+
+\noindent The six discordance filters include three existing ones and
+three new ones.
+
+\begin{enumerate}
+  \item The relative age discordance $d_r$ is the most widely used
+    criterion today. It is more likely to remove young grains than old
+    ones.
+  \item The absolute age discordance $d_t$ is not widely used. But it
+    illustrates the dramatic effect that the discordance definition
+    can have on the filtered age distibutions. In contrast with the
+    relative age filter, it is most likely to reject old grains, and
+    least likely to reject young ones.
+  \item The p-value based discordance filter $d_p$ may have intuitive
+    appeal as an `objective' definition. But it has an undesirable
+    negative effect on the precision and accuracy of the filtered
+    results.
+  \item The Stacey-Kramers discordance filter $d_{sk}$ assumes that
+    discordance is solely caused by common Pb contamination. If this
+    assumption is correct, then the $d_{sk}$ filter will produce the
+    most accurate age distributions, provided that a
+    \citet{stacey1975} common Pb correction is applied to the filtered
+    data.
+  \item The perpendicular Aitchison distance $d_a$ is a useful vehicle
+    to illustrate the application of logratio statistics to detrital
+    zircon U--Pb geochronology. It produces a parallel acceptance zone
+    around the (log-transformed) concordia line. This filter is most
+    likely to reject `middle aged' zircon grains, between 1000 and
+    2000~Ma, where the age resolving power of the U--Pb method is
+    greatest. Above and below this interval, the $d_a$ criterion is
+    more forgiving. This behaviour is desirable because natural
+    samples tend to exhibit more age discordance below 1000~Ma and
+    above 2000~Ma than between these dates.
+  \item The concordia distance $d_c$ is a modified version of the
+    $d_a$ criterion that takes into account the (correlated)
+    uncertainties of the U--Pb isotopic composition.  Its effects on
+    the U--Pb age distributions are more difficult to visualise but
+    are similar to those of the $d_a$ criterion.  Applying the $d_c$
+    filter to the test data shows that it minimises the difference
+    between the \textsuperscript{207}Pb/\textsuperscript{235}U,
+    \textsuperscript{206}Pb/\textsuperscript{238}U,
+    \textsuperscript{207}Pb/\textsuperscript{206}Pb and concordia age
+    spectra. Therefore the $d_c$ criterion simplifies the
+    interpretation of detrital zircon U--Pb age spectra.
+\end{enumerate}
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+%\codeavailability{TEXT} %% use this section when having only software code available
+
+
+%\dataavailability{TEXT} %% use this section when having only data sets available
+
+
+\codedataavailability{\texttt{IsoplotR} is free software released
+  under the GPL-3 license. The package and its source code are
+  available from
+  \texttt{https://cran.r-project.org/package=IsoplotR}. The test data
+  can be downloaded from
+  \texttt{https://github.com/pvermees/discpaper/}.}
+
+
+%\sampleavailability{TEXT} %% use this section when having geoscientific samples available
+
+
+%\videosupplement{TEXT} %% use this section when having video supplements available
+
+
+\appendix
+
+\section{Comparing the precision of the
+  \textsuperscript{207}Pb/\textsuperscript{235}U,
+  \textsuperscript{206}Pb/\textsuperscript{238}U,
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb and concordia
+  clocks}\label{app}
+
+The uncertainty of a U--Pb date depends on three factors:
+
+\begin{enumerate}
+\item the age and, hence, the true isotopic ratio;
+\item the sensitivity of the ion detectors to U and Pb; and
+\item the dwell times used to measure the different isotopes.
+\end{enumerate}
+
+These three factors vary between samples, and between labs.  In order
+to explore their effects, let us first define the following
+parameters:
+
+\begin{itemize}
+\item $t_{68}$, $t_{75}$ and $t_{76}$: the
+  \textsuperscript{206}Pb/\textsuperscript{238}U,
+  \textsuperscript{207}Pb/\textsuperscript{235}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb ages (in Ma);
+\item $\lambda_{38}$ and $\lambda_{35}$: the decay constants of
+  \textsuperscript{238}U and \textsuperscript{235}U (in
+  Ma\textsuperscript{-1});
+\item $R_{85}$: the natural
+  \textsuperscript{238}U/\textsuperscript{235}U ratio;
+\item $R_{68}$, $R_{75}$ and $R_{76}$: the true
+  \textsuperscript{206}Pb/\textsuperscript{238}U,
+  \textsuperscript{207}Pb/\textsuperscript{235}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb atomic ratios;
+\item $r_{68}$, $r_{75}$ and $r_{76}$: the measured
+  \textsuperscript{206}Pb/\textsuperscript{238}U,
+  \textsuperscript{207}Pb/\textsuperscript{235}U and
+  \textsuperscript{207}Pb/\textsuperscript{206}Pb signal ratios;
+\item $f^{Pb}_{U}$: the fractionation factor between Pb and U;
+\item $d^{06}_{38}$: the dwell time ratio of \textsuperscript{206}Pb
+  and \textsuperscript{238}U;
+\item $d^{07}_{06}$: the dwell time ratio of \textsuperscript{207}Pb
+  and \textsuperscript{206}Pb;
+\item $n_{06}$, $n_{07}$ and $n_{38}$: the number of
+  \textsuperscript{206}Pb, \textsuperscript{207}Pb and
+  \textsuperscript{238}U ions counted during a measurement.
+\end{itemize}
+
+Then the true isotope ratios are given by:
+
+\begin{equation}
+  R_{68} = \exp(\lambda_{38}t_{68})-1
+\end{equation}
+\begin{equation}
+  R_{75} = \exp(\lambda_{35}t_{75})-1
+\end{equation}
+\begin{equation}  
+   R_{76} = \frac{1}{R_{85}}\frac{R_{75}}{R_{68}}
+\end{equation}
+
+and the measured ratios by:
+
+\begin{equation}
+    r_{68} = d^{06}_{38}f^{Pb}_{U}R_{68}
+\end{equation}
+\begin{equation}
+    r_{75} = d^{07}_{06}d^{06}_{38}f^{Pb}_{U}R_{75}
+\end{equation}
+\begin{equation}  
+    r_{76} = d^{07}_{06}R_{76}
+\end{equation}
+
+so that the predicted \textsuperscript{206}Pb and
+\textsuperscript{207}Pb ion counts can be written as:
+\begin{equation}
+    n_{06} = n_{38}d^{06}_{38}f^{Pb}_{U}R_{68}
+\end{equation}
+\begin{equation}  
+    n_{07} = n_{06}d^{07}_{06}R_{76}
+\end{equation}
+
+Assuming that all the ions are measured by Secondary Electron
+Multiplier (SEM), with analytical uncertainties that are governed by
+Poissonian shot noise:
+\begin{equation}
+    \left(\frac{\sigma[r_{68}]}{r_{68}}\right)^2 =
+    \frac{1}{n_{38}} + \frac{1}{n_{06}}
+\end{equation}
+\begin{equation}  
+    \left(\frac{\sigma[r_{75}]}{r_{75}}\right)^2 =
+    \frac{1}{n_{38}} + \frac{1}{n_{07}}
+\end{equation}
+\begin{equation}  
+    \left(\frac{\sigma[r_{76}]}{r_{76}}\right)^2 =
+    \frac{1}{n_{06}} + \frac{1}{n_{07}}
+\end{equation}
+
+then the standard errors of the signal ratios ratios are given by:
+\begin{equation}
+    \sigma[r_{68}] = \frac{n_{06}}{n_{38}}
+    \sqrt{\frac{1}{n_{38}} + \frac{1}{n_{06}}}
+\end{equation}
+\begin{equation}  
+    \sigma[r_{75}] = R_{85} \frac{n_{07}}{n_{38}}
+    \sqrt{\frac{1}{n_{38}} + \frac{1}{n_{07}}}
+\end{equation}
+\begin{equation}  
+    \sigma[r_{76}] = \frac{n_{07}}{n_{06}}
+    \sqrt{\frac{1}{n_{06}} + \frac{1}{n_{07}}}
+\end{equation}
+
+Finally, the uncertainties of the age estimates are given by standard
+error propagation:
+\begin{equation}
+    \sigma[t_{68}] = \frac{\partial{t_{68}}}{\partial{r_{68}}} \sigma[r_{68}]
+\end{equation}
+\begin{equation}  
+    \sigma[t_{75}] = \frac{\partial{t_{75}}}{\partial{r_{75}}} \sigma[r_{75}]
+\end{equation}
+\begin{equation}  
+    \sigma[t_{76}] = \frac{\partial{t_{76}}}{\partial{r_{76}}} \sigma[r_{76}]
+\end{equation}
+
+where
+\begin{equation}
+    \frac{\partial{t_{68}}}{\partial{r_{68}}} = 
+    \frac{1}{\lambda_{38}(1+R_{68})} \frac{1}{d^{06}_{38}f^{Pb}_{U}}
+\end{equation}
+\begin{equation}  
+    \frac{\partial{t_{75}}}{\partial{r_{75}}} = 
+    \frac{1}{\lambda_{35}(1+R_{75})} \frac{1}{d^{07}_{06}f^{Pb}_{U}}
+\end{equation}
+\begin{equation}  
+  \frac{\partial{t_{76}}}{\partial{r_{76}}} =
+  \frac{R_{85}R_{68}^2}
+       {(\partial{R_{75}}/\partial{t_{75}})R_{68} -
+         R_{75}(\partial{R_{68}}/\partial{t_{68}})}
+       \frac{1}{d^{07}_{06}}
+\end{equation}
+
+Figure~\ref{fig:precision} shows the result of these calculations
+using realistic values of $n_{38}$, $f^{Pb}_{U}$ and $d^{07}_{06}$,
+which yield an outcome that is similar to the test data.
+
+\noappendix       %% use this to mark the end of the appendix section. Otherwise the figures might be numbered incorrectly (e.g. 10 instead of 1).
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+%\appendixfigures  %% needs to be added in front of appendix figures
+
+%\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+\authorcontribution{This is a single author publication.} %% this section is mandatory
+
+\competinginterests{The author has no competing interests.} %% this section is mandatory even if you declare that no competing interests are present
+
+%\disclaimer{TEXT} %% optional section
+
+\begin{acknowledgements}
+  The writing of this paper was triggered by a stimulating email
+  conversation with Chris Spencer and Steve Puetz. This research was
+  supported by NERC standard grant \#NE/T001518/1 (`Beyond Isoplot').
+\end{acknowledgements}
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+
+\bibliographystyle{copernicus}
+\bibliography{/home/pvermees/Dropbox/biblio.bib}
+
+%\begin{thebibliography}{}
+
+%\bibitem[AUTHOR(YEAR)]{LABEL1}
+%REFERENCE 1
+
+%\bibitem[AUTHOR(YEAR)]{LABEL2}
+%REFERENCE 2
+
+%\end{thebibliography}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+%% \bibliographystyle{copernicus}
+%% \bibliography{example.bib}
+%%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citeauthor{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+% The figure files should be labelled correctly with Arabic numerals (e.g. fig01.jpg, fig02.png).
+
+
+%% ONE-COLUMN FIGURES
+
+%%f
+%\begin{figure}[t]
+%\includegraphics[width=8.3cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure}
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%%% LANDSCAPE TABLE
+%
+%%t
+%\begin{sidewaystable*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{sidewaystable*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{...}
+%\label{a1}
+%\begin{algorithmic}
+%...
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation
+
+
+\end{document}
