@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -60,6 +60,10 @@ Puetz, S.~J., Ganade, C.~E., Zimmermann, U., and Borchardt, G.: {Statistical
   analyses of global U-Pb database 2017}, Geoscience Frontiers, 9, 121--145,
   2018.
 
+\bibitem[{Schoene(2014)}]{schoene2014}
+Schoene, B.: U--Th--Pb Geochronology, Treatise on geochemistry, 4, 341--378,
+  2014.
+
 \bibitem[{Sl{\'{a}}ma et~al.(2008)Sl{\'{a}}ma, Ko{\v{s}}ler, Condon, Crowley,
   Gerdes, Hanchar, Horstwood, Morris, Nasdala, Norberg, Schaltegger, Schoene,
   Tubrett, and Whitehouse}]{slama2008}
@@ -82,5 +86,12 @@ Stacey, J. and Kramers, J.: Approximation of terrestrial lead isotope evolution
 \bibitem[{Vermeesch(2018)}]{vermeesch2018c}
 Vermeesch, P.: {\texttt{IsoplotR}: a free and open toolbox for geochronology},
   Geoscience Frontiers, 9, 1479--1493, 2018.
+
+\bibitem[{Zimmermann et~al.(2018)Zimmermann, Mark, Chew, and
+  Voice}]{zimmermann2018}
+Zimmermann, S., Mark, C., Chew, D., and Voice, P.~J.: {Maximising data and
+  precision from detrital zircon U-Pb analysis by LA-ICPMS: The use of core-rim
+  ages and the single-analysis concordia age}, Sedimentary geology, 375, 5--13,
+  2018.
 
 \end{thebibliography}
