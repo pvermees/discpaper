@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -18,20 +18,6 @@ Cohen, J.: A power primer., Psychological bulletin, 112, 155, 1992.
 Gehrels, G.: {Detrital zircon U-Pb geochronology: Current methods and new
   opportunities}, in: Tectonics of sedimentary basins: Recent advances, edited
   by Busby, C. and Azor, A., chap.~2, pp. 45--62, Wiley Online Library, 2011.
-
-\bibitem[{Griffin et~al.(2008)Griffin, Powell, Pearson, and
-  O'Reilly}]{griffin2008}
-Griffin, W., Powell, W., Pearson, N., and O'Reilly, S.: {GLITTER: data
-  reduction software for laser ablation ICP-MS}, Laser Ablation-ICP-MS in the
-  earth sciences. Mineralogical Association of Canada short course series, 40,
-  204--207, 2008.
-
-\bibitem[{Jackson et~al.(2004)Jackson, Pearson, Griffin, and
-  Belousova}]{jackson2004}
-Jackson, S.~E., Pearson, N.~J., Griffin, W.~L., and Belousova, E.~A.: {The
-  application of laser ablation-inductively coupled plasma-mass spectrometry to
-  in situ U--Pb zircon geochronology}, Chemical Geology, 211, 47--69,
-  \doi{10.1016/j.chemgeo.2004.06.017}, 2004.
 
 \bibitem[{{Ludwig}(1998)}]{ludwig1998}
 {Ludwig}, K.~R.: {On the treatment of concordant uranium-lead ages}, Geochimica
@@ -64,15 +50,6 @@ Puetz, S.~J., Ganade, C.~E., Zimmermann, U., and Borchardt, G.: {Statistical
 Schoene, B.: U--Th--Pb Geochronology, Treatise on geochemistry, 4, 341--378,
   2014.
 
-\bibitem[{Sl{\'{a}}ma et~al.(2008)Sl{\'{a}}ma, Ko{\v{s}}ler, Condon, Crowley,
-  Gerdes, Hanchar, Horstwood, Morris, Nasdala, Norberg, Schaltegger, Schoene,
-  Tubrett, and Whitehouse}]{slama2008}
-Sl{\'{a}}ma, J., Ko{\v{s}}ler, J., Condon, D.~J., Crowley, J.~L., Gerdes, A.,
-  Hanchar, J.~M., Horstwood, M. S.~A., Morris, G.~A., Nasdala, L., Norberg, N.,
-  Schaltegger, U., Schoene, B., Tubrett, M.~N., and Whitehouse, M.~J.:
-  Ple{\v{s}}ovice zircon -- A new natural reference material for {U}-{P}b and
-  {H}f isotopic microanalysis, Chemical Geology, 249, 1--35, 2008.
-
 \bibitem[{Spencer et~al.(2016)Spencer, Kirkland, and Taylor}]{spencer2016}
 Spencer, C.~J., Kirkland, C.~L., and Taylor, R.~J.: {Strategies towards
   statistically robust interpretations of in situ U--Pb zircon geochronology},
@@ -82,6 +59,10 @@ Spencer, C.~J., Kirkland, C.~L., and Taylor, R.~J.: {Strategies towards
 Stacey, J. and Kramers, J.: Approximation of terrestrial lead isotope evolution
   by a two-stage model, Earth and Planetary Science Letters, 26, 207--221,
   1975.
+
+\bibitem[{Vermeesch(2013)}]{vermeesch2013}
+Vermeesch, P.: Multi-sample comparison of detrital age distributions, Chemical
+  Geology, 341, 140--146, 2013.
 
 \bibitem[{Vermeesch(2018)}]{vermeesch2018c}
 Vermeesch, P.: {\texttt{IsoplotR}: a free and open toolbox for geochronology},
