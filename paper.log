@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  16 FEB 2021 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  19 FEB 2021 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2991,28 +2991,28 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 67
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 65
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 67.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-1.
+(Font)              scaled to size 8.54997pt on input line 65.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -3022,35 +3022,34 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 <TW1500.pdf, id=51, 475.06905pt x 428.40588pt>
 File: TW1500.pdf Graphic file (type pdf)
 <use TW1500.pdf>
-Package pdftex.def Info: TW1500.pdf  used on input line 229.
+Package pdftex.def Info: TW1500.pdf  used on input line 227.
 (pdftex.def)             Requested size: 236.15796pt x 212.96039pt.
  [3 <./TW1500.pdf>]
 <agerr.pdf, id=87, 351.83244pt x 280.13058pt>
 File: agerr.pdf Graphic file (type pdf)
 <use agerr.pdf>
-Package pdftex.def Info: agerr.pdf  used on input line 345.
+Package pdftex.def Info: agerr.pdf  used on input line 343.
 (pdftex.def)             Requested size: 236.15796pt x 188.02847pt.
  [4]
 <TW-option-1234.pdf, id=118, 294.47482pt x 381.78569pt>
 File: TW-option-1234.pdf Graphic file (type pdf)
 <use TW-option-1234.pdf>
-Package pdftex.def Info: TW-option-1234.pdf  used on input line 400.
-(pdftex.def)             Requested size: 207.7052pt x 269.29292pt.
+Package pdftex.def Info: TW-option-1234.pdf  used on input line 398.
+(pdftex.def)             Requested size: 236.15796pt x 306.18045pt.
  [5 <./agerr.pdf>]
-<TIMSvsICPMS.pdf, id=158, 471.00568pt x 384.55324pt>
+[6 <./TW-option-1234.pdf>]
+<TIMSvsICPMS.pdf, id=193, 471.00568pt x 384.55324pt>
 File: TIMSvsICPMS.pdf Graphic file (type pdf)
 <use TIMSvsICPMS.pdf>
-Package pdftex.def Info: TIMSvsICPMS.pdf  used on input line 450.
+Package pdftex.def Info: TIMSvsICPMS.pdf  used on input line 448.
 (pdftex.def)             Requested size: 236.15796pt x 192.8101pt.
-
-[6 <./TW-option-1234.pdf>]
 <TW-sk.pdf, id=194, 481.28737pt x 443.4492pt>
 File: TW-sk.pdf Graphic file (type pdf)
 <use TW-sk.pdf>
-Package pdftex.def Info: TW-sk.pdf  used on input line 464.
+Package pdftex.def Info: TW-sk.pdf  used on input line 462.
 (pdftex.def)             Requested size: 236.15796pt x 217.58972pt.
 
-Overfull \hbox (0.7058pt too wide) in paragraph at lines 494--499
+Overfull \hbox (0.7058pt too wide) in paragraph at lines 492--497
 \T1/ptm/m/n/10 where $\OML/cmm/m/it/10 r[]$ \T1/ptm/m/n/10 is the $[]$U/$[]$Pb-
 ratio of the in-ter-sec-tion be-tween con-cor-dia and a straight line con-nect-
 ing the $[]$U/$[]$Pb--$[]$Pb/$[]$Pb
@@ -3060,53 +3059,53 @@ ing the $[]$U/$[]$Pb--$[]$Pb/$[]$Pb
 <Aitchison.pdf, id=229, 202.8648pt x 184.00705pt>
 File: Aitchison.pdf Graphic file (type pdf)
 <use Aitchison.pdf>
-Package pdftex.def Info: Aitchison.pdf  used on input line 537.
+Package pdftex.def Info: Aitchison.pdf  used on input line 535.
 (pdftex.def)             Requested size: 236.15796pt x 214.2092pt.
  [8 <./TW-sk.pdf>] [9 <./Aitchison.pdf>]
 <KDE.pdf, id=300, 356.1851pt x 254.81839pt>
 File: KDE.pdf Graphic file (type pdf)
 <use KDE.pdf>
-Package pdftex.def Info: KDE.pdf  used on input line 631.
+Package pdftex.def Info: KDE.pdf  used on input line 629.
 (pdftex.def)             Requested size: 236.15796pt x 168.9544pt.
  [10 <./KDE.pdf>]
 <KDEs.pdf, id=323, 356.11737pt x 449.54742pt>
 File: KDEs.pdf Graphic file (type pdf)
 <use KDEs.pdf>
-Package pdftex.def Info: KDEs.pdf  used on input line 675.
+Package pdftex.def Info: KDEs.pdf  used on input line 673.
 (pdftex.def)             Requested size: 341.43306pt x 431.03242pt.
  [11] [12] [13 <./KDEs.pdf>] [14] [15] [16]
-<IsoplotR.png, id=429, 1208.515pt x 350.30875pt>
+<IsoplotR.png, id=428, 1199.48125pt x 252.945pt>
 File: IsoplotR.png Graphic file (type png)
 <use IsoplotR.png>
-Package pdftex.def Info: IsoplotR.png  used on input line 1021.
-(pdftex.def)             Requested size: 341.43306pt x 98.96774pt.
+Package pdftex.def Info: IsoplotR.png  used on input line 1019.
+(pdftex.def)             Requested size: 341.43306pt x 72.0013pt.
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 1
-034.
+032.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [17 <./IsoplotR.png>] [18] (./paper.bbl [19]
-Underfull \hbox (badness 6675) in paragraph at lines 23--26
+) [17 <./IsoplotR.png>] [18] [19]
+Underfull \hbox (badness 6675) in paragraph at lines 1174--1177
 []\T1/ptm/m/n/9 Ludwig, K. R.: On the treat-ment of con-cor-dant uranium-lead a
 ges, Geochim-ica et Cos-mochim-ica Acta, 62, 665--676,
  []
 
-) [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1337.
+[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1415.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1337.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1337.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1337.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1415.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1415.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1415.
  ) 
 Here is how much of TeX's memory you used:
- 13101 strings out of 481239
- 170681 string characters out of 5920377
- 498424 words of memory out of 5000000
- 27976 multiletter control sequences out of 15000+600000
+ 13097 strings out of 481239
+ 170648 string characters out of 5920377
+ 499424 words of memory out of 5000000
+ 27975 multiletter control sequences out of 15000+600000
  584473 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,13n,46p,948b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,13n,46p,948b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-
@@ -3127,10 +3126,10 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (20 pages, 448208 bytes).
+Output written on paper.pdf (20 pages, 437150 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
+ 550 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
  105 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
